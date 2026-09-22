@@ -16,6 +16,8 @@ the non-linearity, and also because it has significant effect on the output.
 performed between runs. This keeps variance bounded.
 * The effects of the hyperparameters $\theta$ (correlation length) and %$\sigma^2$ (prior variance) are explored and plotted in figures 2 and 3.
 <img width="700" alt="Screenshot 2026-09-22 at 14 56 41" src="https://github.com/user-attachments/assets/27bf24d9-755a-4514-b85f-1c433f629801" />
+
+
 ## 2D Emulation
 * We conduct 2D emulation of $x_1$ and $x_2$ as they have an interaction term.
 * A Latin Hypercube Design is used to allocate 20 well-spaced input points.
@@ -34,6 +36,7 @@ set to 0.5 and $z=14.5$.
 * We can approach optimisation with a history matching style strategy to find a set of inputs that maximise our function
 $f(x)$. For this, to obtain interesting plots, we again focus on the variables $(x_1,x_2)$, since the quadratic and linear terms
 are simply maximised at their boundaries. To investigate the global max, we set $x_3 = x_4 = x_5 = 1$.
+
 <img width="700"  alt="Screenshot 2026-09-22 at 14 54 50" src="https://github.com/user-attachments/assets/91d99d8b-bd4d-44bc-a4a5-691f2fcfcced" />
 <img width="700"  alt="Screenshot 2026-09-22 at 14 55 28" src="https://github.com/user-attachments/assets/2237f596-ffa1-497e-91ec-49de13e0d4ac" />
 
