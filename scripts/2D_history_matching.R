@@ -41,7 +41,6 @@ history_match_2D <- function(var1, var2, index1, index2, z) {
   Imp_mat <- sqrt((E_D_fx_mat - z)^2 / (Var_D_fx_mat + sigma_e^2 + sigma_epsilon^2))
   Imp_mat[Imp_mat > 40] <- 40
   ### Define colours and levels for implausibility plots ###
-  imp_cols <- function(n) turbo(n, begin = 0.15, end = 1)
   imp_levs <- c(0, seq(1, 2.75, 0.25), seq(3, 18, 2), 20, 30, 41)
 
   ### plot wave 1 implausibility and wave 1 runs only ###
@@ -135,7 +134,6 @@ history_match_2D <- function(var1, var2, index1, index2, z) {
     Imp_true_mat[Imp_true_mat > 40] <- 40
 
     ### Define colours and levels for implausibility plots ###
-    imp_cols <- function(n) turbo(n, begin = 0.15, end = 1)
     imp_levs <- c(0, seq(1, 2.75, 0.25), seq(3, 18, 2), 20, 30, 41)
 
     ### if k=0 plot wave 1 runs only ###
